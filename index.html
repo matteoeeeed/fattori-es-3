@@ -1,0 +1,41 @@
+<html>
+<body onload="fattorizzatore()">  
+<div class="container">
+<div class="row">
+<div class="col-sm">  
+<div class="card" style="width: 14rem; background-color:rgb(229, 255, 80);border-radius: 2px;border: black solid 5px;width:200px;height: 522px;border-radius: 15px;">
+<div class="card-body">   
+<h2 class="card-title">ES3</h2>
+<p id="x"></p>
+<p id="ca3">0</p>
+<p id="ca"></p>
+</div>
+</div>
+</div>
+<script>
+function fattorizzatore(){ 
+let n=100000;    
+let stringaFattori="";
+let fineciclo=n/2;
+let cont=0;
+let cont2=0;
+num=1000;
+for(let fattore=1; fattore<=fineciclo;fattore++){
+if (n%fattore==0){  
+stringaFattori=stringaFattori+ fattore+" ";
+cont++;
+}
+if(num>1000 && num<2000){
+if (n%fattore==0){  
+stringaFattori=stringaFattori+ fattore+" ";
+}   
+cont2++;
+}
+}
+document.getElementById("ca").innerHTML=cont;
+document.getElementById("ca3").innerHTML=cont2;
+document.getElementById("x").innerHTML=stringaFattori;
+}
+</script>
+</body>
+</html>
